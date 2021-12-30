@@ -1,0 +1,70 @@
+:root {
+    --red-color:  #CE171D;
+    --yellow-color: #F2F2DB;
+}
+
+.greeting-container {
+    width: 400px;
+    height: 400px;
+}
+
+.left-section {
+    width: 200px;
+    height: 400px;
+    background-color: var(--yellow-color);
+}
+
+.left-image {
+    height: 380px;
+    animation: slide-in-from-left 1s ease-in 0s 1;
+}
+
+.right-section {
+    width: 200px;
+    height: 400px;
+    background-color: var(--red-color);
+}
+
+.right-section-text {
+    animation: slide-in-from-right 2s ease-in 0s 1;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: var(--yellow-color);
+    font-size: 2rem;
+}
+
+.description {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--yellow-color);
+    font-size: 0.8rem;
+}
+
+@keyframes slide-in-from-left {
+    0%{
+        transform: translate(-400px);
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-from-right {
+    0%{
+        transform: translate(400px);
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
